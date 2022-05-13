@@ -1,0 +1,39 @@
+.hero {
+  min-height: 400px;
+  max-width: 1600px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 0;
+  padding: 118px 204px;
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+  background-color: var(--accent-bg-color);
+  // background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)),
+  //   url(../images/herobg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/herobg-mob.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../../images/herobg-mob-2x.jpg);
+    }
+  }
+}

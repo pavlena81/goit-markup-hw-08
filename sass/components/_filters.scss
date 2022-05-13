@@ -1,0 +1,73 @@
+.main {
+  background-color: var(--accessorial-text-color);
+}
+
+/* button */
+
+.button {
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 22px;
+
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    min-width: 73px;
+    background-color: var(--button-accent-color);
+    color: var(--accessorial-text-color);
+    box-shadow: var(--filters-shadow);
+  }
+}
+
+.button__primary,
+.button__current {
+  min-width: 73px;
+
+  background-color: var(--button-accent-color);
+  color: var(--accessorial-text-color);
+  box-shadow: var(--filters-shadow);
+}
+
+.button__secondary {
+  min-width: 128px;
+
+  background-color: var(--buttom-bg-color);
+  color: var(--main-text-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--button-accent-color);
+    color: var(--accessorial-text-color);
+    box-shadow: var(--filters-shadow);
+  }
+}
+
+/* --filters */
+
+.filters__list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filters__title {
+  margin: 0;
+}
+
+.filters__item:not(:last-child) {
+  margin-right: 8px;
+}

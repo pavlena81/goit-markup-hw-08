@@ -1,0 +1,18 @@
+.features__title,
+// .team__title,
+// .clients__title,
+.work__title {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  text-align: center;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+
+  color: var(--main-text-color);
+}
