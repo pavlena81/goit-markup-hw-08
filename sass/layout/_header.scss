@@ -1,12 +1,24 @@
 .header {
   background-color: var(--accessorial-text-color);
   border-bottom: 1px solid var(--header-border-color);
-  display: flex;
+  // display: flex;
   align-items: center;
 }
 
 /* main-nav */
 
 .main-nav {
-  display: flex;
+  margin: 0;
+  @media screen and (max-width: 767px) {
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    display: flex;
+  }
+
+  // @media screen and (min-width: 768px) {
+  //   width: 1200px;
+  // }
 }
