@@ -59,9 +59,24 @@ img {
   width: 100%;
 }
 
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
   }
 }
 
@@ -197,19 +212,40 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/herobg-mob.jpg);
+    background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)), url(../images/herobg-mob.jpg);
   }
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/herobg-mob-2x.jpg);
+    background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)), url(../images/herobg-mob-2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)), url(../images/herobg-tab.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero .hero {
+    background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)), url(../images/herobg-tab-2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 600px;
+    background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)), url(../images/herobg.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero .hero {
+    background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)), url(../images/herobg-descktop-2x.jpg);
   }
 }
 
 .hero__title {
-  max-width: 696px;
+  width: 360px;
   margin: 0 auto;
   margin-top: 0;
   margin-bottom: 30px;
@@ -217,8 +253,21 @@ img {
   font-size: 26px;
   line-height: 1.62;
   letter-spacing: 0.06em;
+  text-align: center;
   text-transform: uppercase;
   color: var(--accessorial-text-color);
+}
+@media screen and (min-width: 480px) {
+  .hero__title {
+    width: 360px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.63;
+  }
 }
 
 .btn {

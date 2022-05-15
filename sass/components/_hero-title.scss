@@ -1,5 +1,5 @@
 .hero__title {
-  max-width: 696px;
+  width: 360px;
   margin: 0 auto;
 
   margin-top: 0;
@@ -10,7 +10,21 @@
   line-height: 1.62;
 
   letter-spacing: 0.06em;
+  text-align: center;
   text-transform: uppercase;
 
   color: var(--accessorial-text-color);
+
+  @media screen and (min-width: 480px) {
+    width: 360px;
+  }
+
+  @media screen and (max-width: 767px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.63;
+  }
 }
