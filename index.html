@@ -28,12 +28,35 @@
            <li class="site-nav__item"><a class="site-nav__link" href="">Контакты</a></li>
         </ul>
       </nav>
-      <button class="mobile-menu__btn" type="button">
+      <button class="mobile-menu__btn" type="button" data-menu-button aria-expanded="false">
         <svg class="mobile-menu__icon" width="40" height="40">
-          <use class="mobile-menu__icon--open" href=""></use>
-          <use class="mobile-menu__icon--close" href="./images/icons/symbol-defs.svg#icon-close"></use>  
+          <use class="icon__open" href="./images/icons/symbol-defs.svg#icon-menu"></use>
+          <use class="icon__close" href="./images/icons/symbol-defs.svg#icon-close"></use>  
         </svg>
       </button>
+      <div class="mobile-menu" data-menu>
+        
+      <ul class="mobile-menu__nav list">
+        <li class="mobile-menu__item"><a class="mobile-menu__link" href="./index.html">Студия</a></li>
+        <li class="mobile-menu__item"><a class="mobile-menu__link" href="./portfolio.html">Портфолио</a></li>
+        <li class="mobile-menu__item"><a class="mobile-menu__link" href=" ">Контакты</a></li>
+        
+      </ul>
+
+      <ul class="mobile-menu__contacts">
+        <li class="mobile-menu__item--tel"><a class="mobile-menu__tel" href="tel:+380961111111">+380961111111</a></li>
+        <li class="mobile-menu__item--mail"><a class="mobile-menu__mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+      </ul>
+
+      <ul class="mobile-menu__soc list">
+        <li class="soc__item" ><a class="soc__link link" href="">Instagram</a></li>
+        <li class="soc__item" ><a class="soc__link link" href="">Twitter</a></li>
+        <li class="soc__item" ><a class="soc__link link" href="">Facebook</a></li>
+        <li class="soc__item" ><a class="soc__link link" href="">LinkedIn</a></li>
+      </ul>
+        
+      </div>
+      
         <ul class="auth-nav list">                       
           <li class="auth-nav__item">       
             <a class="auth-nav__link" href="mailto:info@devstudio.com">
@@ -474,5 +497,6 @@
       </div>
     </div> 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
