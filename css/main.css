@@ -413,7 +413,6 @@ img {
   align-items: center;
   justify-content: center;
   margin-bottom: 0;
-  padding: 118px 204px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -454,7 +453,6 @@ img {
 }
 
 .hero__title {
-  width: 360px;
   margin: 0 auto;
   margin-top: 0;
   margin-bottom: 30px;
