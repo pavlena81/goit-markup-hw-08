@@ -37,7 +37,7 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    margin: -15px;
+    gap: 30px;
   }
 }
 
@@ -68,8 +68,13 @@
   }
 
   @media screen and (min-width: 768px) {
-    flex-basis: calc((100% - 60px) / 2);
-    margin: 15px;
+    max-width: 768px;
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    flex-basis: calc((100% - 90px) / 4);
   }
 
   // margin-bottom: 30px;
