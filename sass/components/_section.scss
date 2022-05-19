@@ -1,6 +1,12 @@
 .section {
-  .nopadding {
-    padding-top: 0;
+  &.nopadding {
+    @media screen and (max-width: 1199px) {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-top: 0;
+    }
   }
 
   @media screen and (max-width: 1199px) {
