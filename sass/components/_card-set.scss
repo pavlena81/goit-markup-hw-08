@@ -58,9 +58,21 @@
 
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  @media screen and (min-width: 768px) {
-    padding: 55px 20px;
+
+  @media screen and (min-width: 320px) {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
     font-size: 16px;
+  }
+
+  @media screen and (min-width: 480px) {
+    display: flex;
+    align-items: center;
+    padding: 77px 24px;
+    font-size: 18px;
   }
 }
 
@@ -77,6 +89,9 @@
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 4px;
+  }
 }
 
 .card-set__text {
