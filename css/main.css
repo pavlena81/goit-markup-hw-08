@@ -145,6 +145,7 @@ img {
   border: none;
   background-color: transparent;
   z-index: 10;
+  fill: currentColor;
   cursor: pointer;
 }
 .mobile-menu__btn:hover > .icon__open, .mobile-menu__btn:focus > .icon__open, .mobile-menu__btn:hover > .icon__close, .mobile-menu__btn:focus > .icon__close {
@@ -188,6 +189,7 @@ img {
   height: 100%;
   padding: 48px 40px;
   background-color: var(--accessorial-text-color);
+  z-index: 1;
 }
 @media screen and (max-width: 479px) {
   .mobile-menu {

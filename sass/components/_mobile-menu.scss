@@ -11,6 +11,7 @@
   border: none;
   background-color: transparent;
   z-index: 10;
+  fill: currentColor;
   cursor: pointer;
 
   &:hover > .icon__open,
@@ -58,6 +59,7 @@
   height: 100%;
   padding: 48px 40px;
   background-color: var(--accessorial-text-color);
+  z-index: 1;
 
   @media screen and (max-width: 479px) {
     max-width: 479px;
