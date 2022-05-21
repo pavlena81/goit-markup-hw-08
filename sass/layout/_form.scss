@@ -115,13 +115,13 @@
 }
 
 .modal__checkbox--agreement {
-  display: inline-flex;
-
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1200px) {
     font-size: 12px;
   }
+
+  display: inline-flex;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 .modal__link {

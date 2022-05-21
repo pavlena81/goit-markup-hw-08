@@ -133,10 +133,8 @@ img {
 }
 
 .mobile-menu__btn {
-  position: fixed;
   top: 10px;
   right: 15px;
-  display: flex;
   align-items: center;
   justify-content: center;
   width: 40px;
@@ -145,10 +143,9 @@ img {
   border: none;
   background-color: transparent;
   z-index: 10;
-  fill: currentColor;
   cursor: pointer;
 }
-.mobile-menu__btn:hover > .icon__open, .mobile-menu__btn:focus > .icon__open, .mobile-menu__btn:hover > .icon__close, .mobile-menu__btn:focus > .icon__close {
+.mobile-menu__btn:hover > .mobile-menu__icon, .mobile-menu__btn:focus > .mobile-menu__icon {
   fill: var(--accent-color);
 }
 @media screen and (min-width: 768px) {
@@ -157,9 +154,8 @@ img {
   }
 }
 
-.icon__close,
-.icon__open {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.mobile-menu__icon {
+  transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu__btn .icon__open {
@@ -817,7 +813,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 16px;
+  height: 92px;
+  max-width: 210px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   color: var(--icon-color);
@@ -826,7 +823,6 @@ img {
 @media screen and (max-width: 767px) {
   .clients__item {
     flex-basis: calc((100% - 30px) / 2);
-    padding: 12px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1183,7 +1179,6 @@ img {
 .card-set__item {
   display: flex;
   flex-direction: column;
-  margin-bottom: 30px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .card-set__item:hover, .card-set__item:focus {
@@ -1191,6 +1186,11 @@ img {
 }
 .card-set__item:hover .card-set__cover--text, .card-set__item:focus .card-set__cover--text {
   transform: translateY(0%);
+}
+@media screen and (max-width: 767px) {
+  .card-set__item {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 768px) {
   .card-set__item {
@@ -1418,7 +1418,7 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1200px) {
   .modal__checkbox--agreement {
     font-size: 12px;
   }
