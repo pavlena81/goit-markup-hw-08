@@ -415,6 +415,7 @@ img {
   margin-right: auto;
   text-align: center;
   background-color: var(--accent-bg-color);
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -423,7 +424,7 @@ img {
     background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)), url(../images/herobg-mob.jpg);
   }
 }
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero .hero {
     background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)), url(../images/herobg-mob-2x.jpg);
   }
@@ -433,7 +434,7 @@ img {
     background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)), url(../images/herobg-tab.jpg);
   }
 }
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero .hero {
     background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)), url(../images/herobg-tab-2x.jpg);
   }
@@ -444,7 +445,7 @@ img {
     background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)), url(../images/herobg.jpg);
   }
 }
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero .hero {
     background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)), url(../images/herobg-descktop-2x.jpg);
   }
@@ -823,7 +824,6 @@ img {
 .footer {
   background-color: var(--accent-bg-color);
   color: var(--accessorial-text-color);
-  margin-bottom: 60px;
 }
 
 .footer__page {
@@ -850,9 +850,13 @@ img {
 }
 
 .footer__main {
-  flex-wrap: wrap;
   max-width: 231px;
   margin: 0 auto;
+}
+@media screen and (max-width: 767px) {
+  .footer__main {
+    margin-bottom: 60px;
+  }
 }
 @media screen and (min-width: 768px) {
   .footer__main {
@@ -885,6 +889,11 @@ img {
 
 .footer-social {
   margin-left: auto;
+}
+@media screen and (max-width: 767px) {
+  .footer-social {
+    margin-bottom: 60px;
+  }
 }
 @media screen and (min-width: 768px) {
   .footer-social {
@@ -934,7 +943,6 @@ img {
   .footer-social__list {
     justify-content: center;
     align-items: center;
-    margin-bottom: 60px;
   }
 }
 
