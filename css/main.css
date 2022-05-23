@@ -121,15 +121,16 @@ img {
   text-decoration: none;
   color: var(--logo-text-color);
 }
-@media screen and (max-width: 767px) {
-  .logo {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
-}
 
 .logo__part {
   color: var(--accent-color);
+}
+
+@media screen and (max-width: 767px) {
+  .logo__mob {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 }
 
 .mobile-menu__btn {
@@ -425,8 +426,8 @@ img {
     background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)), url(../images/herobg-mob.jpg);
   }
 }
-@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  .hero .hero {
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .hero {
     background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)), url(../images/herobg-mob-2x.jpg);
   }
 }
@@ -435,8 +436,8 @@ img {
     background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)), url(../images/herobg-tab.jpg);
   }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  .hero .hero {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
     background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)), url(../images/herobg-tab-2x.jpg);
   }
 }
@@ -446,8 +447,8 @@ img {
     background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)), url(../images/herobg.jpg);
   }
 }
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  .hero .hero {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
     background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)), url(../images/herobg-descktop-2x.jpg);
   }
 }
@@ -909,8 +910,8 @@ img {
 }
 @media screen and (max-width: 1199px) {
   .footer__logo {
-    justify-content: center;
-    align-items: center;
+    display: block;
+    text-align: center;
   }
 }
 

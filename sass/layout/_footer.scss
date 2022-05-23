@@ -72,8 +72,8 @@
 
   color: var(--accessorial-text-color);
   @media screen and (max-width: 1199px) {
-    justify-content: center;
-    align-items: center;
+    display: block;
+    text-align: center;
   }
 }
 
