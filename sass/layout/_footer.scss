@@ -17,18 +17,21 @@
   }
 }
 .footer__tablet {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+
   @media screen and (min-width: 768px) {
-    max-width: 768px;
     display: flex;
+    justify-content: center;
     align-items: baseline;
-    padding-bottom: 60px;
   }
 }
 
 .footer__main {
   // flex-wrap: wrap;
-  max-width: 231px;
-  margin: 0 auto;
+  // max-width: 231px;
+  // margin: 0 auto;
 
   @media screen and (max-width: 767px) {
     margin-bottom: 60px;
@@ -39,6 +42,7 @@
     // display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 165px;
   }
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
@@ -58,13 +62,10 @@
 }
 
 .footer-social {
-  @media screen and (max-width: 767px) {
-    margin-bottom: 60px;
-  }
   @media screen and (min-width: 768px) {
-    margin: 0 auto;
+    // margin: 0 auto;
   }
-  margin-left: auto;
+  // margin-left: auto;
 }
 
 .footer__logo {
