@@ -68,10 +68,6 @@
 }
 
 .auth-nav {
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
-
   @media screen and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
@@ -79,6 +75,10 @@
     gap: 10px;
 
     margin-left: auto;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
   }
 
   @media screen and (min-width: 1200px) {
